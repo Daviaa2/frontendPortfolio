@@ -17,7 +17,7 @@ import {
 
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 
-import PROJECT_IMG_1 from "../images/";
+import PROJECT_IMG_1 from "../images/leanCanvas.jpg";
 
 export const SKILLS_CATEGORY = [
   {
@@ -136,44 +136,44 @@ export const PASSIONS = [
   },
 ];
 
-export const SOCIAL_LINKS =[
-    {
-        name: "Github",
-        icon: FiGithub,
-        url: "https://github.com/Daviaa2",
-        color: "hover:text-gray-400",
-        bgColor: "hover:text-gray-800"
-    },
-     {
-        name: "LinkedIn",
-        icon: FiLinkedin,
-        url: "https://www.linkedin.com/in/a-davie",
-        color: "hover:text-blue-400",
-        bgColor: "hover:text-blue-500/10"
-    },
-    {
-        name: "Email",
-        icon: Mail,
-        url: "mailto:Andav529@gmail.com",
-        color: "hover:text-green-400",
-        bgColor: "hover:text-green-500/10"
-    },
-]
+export const SOCIAL_LINKS = [
+  {
+    name: "Github",
+    icon: FiGithub,
+    url: "https://github.com/Daviaa2",
+    color: "hover:text-gray-400",
+    bgColor: "hover:text-gray-800",
+  },
+  {
+    name: "LinkedIn",
+    icon: FiLinkedin,
+    url: "https://www.linkedin.com/in/a-davie",
+    color: "hover:text-blue-400",
+    bgColor: "hover:text-blue-500/10",
+  },
+  {
+    name: "Email",
+    icon: Mail,
+    url: "mailto:Andav529@gmail.com",
+    color: "hover:text-green-400",
+    bgColor: "hover:text-green-500/10",
+  },
+];
 
 export const CONTACT_INFO = [
-    {
-        icon: MapPin,
-        label: "Location",
-        value: "ChristChurch"
-    },
-    {
-        icon: Mail,
-        label: "Email",
-        value: "Andav529@gmail.com"
-    },
-    {
-        icon: Phone,
-        label: "Phone",
-        value: "027 882 9959"
-    }
-]
+  {
+    icon: MapPin,
+    label: "Location",
+    value: "ChristChurch",
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "Andav529@gmail.com",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "027 882 9959",
+  },
+];
