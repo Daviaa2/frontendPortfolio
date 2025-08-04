@@ -146,6 +146,10 @@ const HeroSection = () => {
                 </motion.div>
             </motion.div>
         </div>
+        {/* Scroll Indicator */}
+        <motion.div animate={{y: [0,8,0]}} transition= {{duration: 2, repeat: Infinity}} className="">
+            <ArrowDown size={20} className={isDarkMode ? "text-gray-600" : "text-gray-400"}/>
+        </motion.div>
       </motion.section>
     </div>
   );
