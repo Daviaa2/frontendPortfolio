@@ -144,7 +144,11 @@ const HeroSection = () => {
                 <span
                   className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                 >
-                  That Matter
+                  That 
+                </span>
+                 <span
+                  className="text-red-500 front-medium ml-2">
+                  Matter
                 </span>
               </motion.h1>
               <motion.p
@@ -153,8 +157,8 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 } md-8 max-w-xl mx-auto font-light leading-relaxed`}
               >
-                I craft beutiful, functional web applications with modern
-                technologies and thoughtful user experiences.
+                I design and implement technology solutions that address real world challenges, 
+                bridging the gap between business needs and innovative digital tools to deliver measurable results.
               </motion.p>
 
               {/* CTA Buttons - Mobile */}
@@ -238,6 +242,16 @@ const HeroSection = () => {
                   className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                 >
                   MongoDB
+                </span>
+                <span
+                  className={isDarkMode ? "text-gray-700" : "text-gray-400"}
+                >
+                  .
+                </span>
+                   <span
+                  className={isDarkMode ? "text-gray-600" : "text-gray-500"}
+                >
+                  Analysis
                 </span>
                 <span
                   className={isDarkMode ? "text-gray-700" : "text-gray-400"}

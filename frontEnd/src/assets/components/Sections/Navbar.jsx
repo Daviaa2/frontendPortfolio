@@ -30,7 +30,9 @@ function Navbar() {
           className="flex items-center space-x-2 "
         >
           <Code2 size={24} className="text-blue-500" />
-          <span className="text-lg ml-1">Welcome to My Website</span>
+          <span className={`text-lg ml-1 ${isDarkMode
+                  ? "text-gray-400 hover:text-white"
+                  : "text-gray-600 hover:text-gray-900"}`}>Welcome to My Website</span>
         </motion.div>
 
         {/* Desktop Navigation */}
