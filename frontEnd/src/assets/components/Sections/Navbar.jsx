@@ -30,9 +30,15 @@ function Navbar() {
           className="flex items-center space-x-2 "
         >
           <Code2 size={24} className="text-blue-500" />
-          <span className={`text-lg ml-1 ${isDarkMode
-                  ? "text-gray-400 hover:text-white"
-                  : "text-gray-600 hover:text-gray-900"}`}>Welcome to My Website</span>
+          <span
+            className={`text-lg ml-1 ${
+              isDarkMode
+                ? "text-gray-400 hover:text-white"
+                : "text-gray-600 hover:text-gray-900"
+            }`}
+          >
+            Welcome to My Website
+          </span>
         </motion.div>
 
         {/* Desktop Navigation */}
@@ -64,34 +70,35 @@ function Navbar() {
             {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
           </motion.button>
         </div>
-      </div>
-      {/* Mobile Menu Button */}
-      <div className="md:hidden flex items-center space-x-4">
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => toggleDarkMode(isDarkMode ? "light" : "dark")}
-          className={`p-2 rounded-full transition-colors ${
-            isDarkMode
-              ? "text-gray-400 hover:text-white hover:bg-gray-800"
-              : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
-          }`}
-        >
-          {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
-        </motion.button>
 
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className={`p-2 rounded-full transition-colors ${
-            isDarkMode
-              ? "text-gray-400 hover:text-white hover:bg-gray-800"
-              : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
-          }`}
-        >
-          {isMenuOpen ? <X size={18} /> : <Menu size={20} />}
-        </motion.button>
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center space-x-4">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => toggleDarkMode(isDarkMode ? "light" : "dark")}
+            className={`p-2 rounded-full transition-colors ${
+              isDarkMode
+                ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+            }`}
+          >
+            {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
+          </motion.button>
+
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className={`p-2 rounded-full transition-colors ${
+              isDarkMode
+                ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+            }`}
+          >
+            {isMenuOpen ? <X size={18} /> : <Menu size={20} />}
+          </motion.button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
